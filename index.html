@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Gabrielle | Fonoaudióloga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#FFFDF5', // Very light cream
+                            accent: '#D4A373', // Warm golden-yellow/honey
+                            soft: '#FEFAE0',   // Soft buttery yellow
+                            pink: '#FADADD',   // Soft pastel pink
+                            dark: '#5C544E',   // Warm earthy brown-grey for text
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Quicksand', sans-serif; }
+    </style>
+</head>
+<body class="bg-brand-light text-brand-dark">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-brand-soft">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold text-brand-accent">Ana Gabrielle</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#sobre" class="hover:text-brand-accent transition">Sobre</a>
+                <a href="#especialidades" class="hover:text-brand-accent transition">Especialidades</a>
+                <a href="#contato" class="hover:text-brand-accent transition">Contato</a>
+            </div>
+            <a href="https://wa.me/5519993104101" target="_blank" class="bg-brand-accent text-white px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition shadow-sm">
+                Agendar Consulta
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight text-gray-900">
+                    Apoio especializado para a <span class="text-brand-accent">comunicação</span> do seu filho
+                </h1>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Fonoaudiologia pautada na leveza e no afeto, auxiliando crianças a superarem desafios de linguagem e motricidade para se comunicarem com confiança.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="https://wa.me/5519993104101" target="_blank" class="flex items-center justify-center gap-2 bg-brand-accent text-white px-8 py-4 rounded-full font-bold hover:opacity-90 transition text-lg shadow-lg">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Agendar Consulta
+                    </a>
+                    <a href="#especialidades" class="flex items-center justify-center gap-2 border border-gray-300 px-8 py-4 rounded-full font-bold hover:bg-gray-50 transition text-lg">
+                        Ver Especialidades
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full aspect-square bg-transparent rounded-full overflow-hidden border-8 border-white shadow-2xl relative z-10">
+                    <img src="perfil.jpeg" alt="Fono Ana Gabrielle" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-brand-pink rounded-full -z-0 opacity-50"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-white px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <h2 class="text-3xl font-bold text-gray-900">Sobre Mim</h2>
+            <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                Olá! Sou a Ana Gabrielle, fonoaudióloga dedicada ao desenvolvimento infantil. Acredito que a terapia deve ser um espaço de acolhimento, onde a criança se sinta segura e motivada a evoluir. Meu trabalho é focado em transformar a comunicação em um processo leve, respeitando o tempo de cada criança e envolvendo a família em cada conquista.
+            </p>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="especialidades" class="py-20 px-4 bg-brand-soft/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-3xl font-bold text-gray-900">Especialidades</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tratamentos personalizados para as necessidades específicas de cada criança.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Specialty 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition border border-brand-soft group">
+                    <div class="w-12 h-12 bg-brand-soft text-brand-accent rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent group-hover:text-white transition duration-300">
+                        <i data-lucide="message-square" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Linguagem Infantil</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Apoio no desenvolvimento da fala e compreensão, estimulando a expressão oral de forma lúdica.</p>
+                </div>
+
+                <!-- Specialty 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition border border-brand-soft group">
+                    <div class="w-12 h-12 bg-brand-pink/40 text-brand-dark rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-pink group-hover:text-white transition duration-300">
+                        <i data-lucide="smile" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Motricidade Orofacial</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Equilíbrio e função dos músculos da face e boca, essencial para fala, respiração e mastigação.</p>
+                </div>
+
+                <!-- Specialty 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition border border-brand-soft group">
+                    <div class="w-12 h-12 bg-brand-soft text-brand-accent rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent group-hover:text-white transition duration-300">
+                        <i data-lucide="utensils" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Seletividade Alimentar</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Abordagem gentil para crianças com dificuldades na aceitação de novos alimentos e texturas.</p>
+                </div>
+
+                <!-- Specialty 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition border border-brand-soft group">
+                    <div class="w-12 h-12 bg-brand-pink/40 text-brand-dark rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-pink group-hover:text-white transition duration-300">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">CAA</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Comunicação Alternativa e Aumentativa para dar voz a quem possui limitações na fala oral.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations / Contact -->
+    <section id="contato" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto bg-brand-accent rounded-[3rem] p-8 md:p-16 text-center text-white shadow-2xl relative overflow-hidden">
+            <div class="relative z-10 space-y-8">
+                <h2 class="text-3xl md:text-5xl font-bold">Vamos conversar?</h2>
+                <p class="text-white/80 text-lg max-w-2xl mx-auto">
+                    Atendimentos presenciais em <strong class="text-white">Valinhos</strong> e <strong class="text-white">Campinas</strong>.
+                    Entre em contato para tirar dúvidas ou agendar seu horário.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/5519993104101" target="_blank" class="bg-white text-brand-accent px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition text-lg flex items-center justify-center gap-2">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Enviar WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/fonoanagabi" target="_blank" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition text-lg flex items-center justify-center gap-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="w-5 h-5" alt="Instagram">
+                        Seguir no Instagram
+                    </a>
+                </div>
+            </div>
+            <div class="absolute top-0 left-0 w-64 h-64 bg-white/20 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50"></div>
+            <div class="absolute bottom-0 right-0 w-64 h-64 bg-white/20 rounded-full translate-x-1/2 translate-y-1/2 opacity-50"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 text-center text-gray-500 text-sm">
+        <div class="max-w-6xl mx-auto space-y-4">
+            <p>© 2026 Ana Gabrielle Fonoaudióloga. Todos os direitos reservados.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.instagram.com/fonoanagabi" target="_blank" class="hover:text-brand-accent transition">Instagram</a>
+                <a href="https://wa.me/5519993104101" target="_blank" class="hover:text-brand-accent transition">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
